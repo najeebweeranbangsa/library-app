@@ -15,7 +15,11 @@ return new class extends Migration
     {
         Schema::create('students', function (Blueprint $table) {
             $table->id();
+            $table->string('Book Name');
+            $table->string('Book Author Name');
+            $table->string('ISBN number');
             $table->timestamps();
+
         });
     }
 
