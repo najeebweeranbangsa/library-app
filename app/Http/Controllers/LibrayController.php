@@ -8,7 +8,7 @@ class LibrayController extends Controller
 {
     public function index()
     {
-        $students = Student::all();
-        return view ('students.index')->with('students', $students);
+        $Student = Students::all();
+        return response() -> json($Student)
     }
 }
