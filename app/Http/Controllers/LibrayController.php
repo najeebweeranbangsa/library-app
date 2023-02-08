@@ -9,6 +9,6 @@ class LibrayController extends Controller
     public function index()
     {
         $Student = Students::all();
-        return response() -> json($Student)
+        return response() -> json($Student);
     }
 }
